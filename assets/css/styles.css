@@ -429,11 +429,58 @@ p{margin-top:0}
     align-items:flex-start;
   }
   .nav-links.open{display:flex}
+
+  /* Recompose the homepage hero for narrow screens instead of
+     simply stacking desktop-sized panels. */
   .hero-grid{grid-template-columns:1fr}
-  .hero-copy{grid-column:auto;padding:4.3rem 0 2.8rem}
-  .system-board,.portrait-zone{min-height:430px;border-left:0;border-right:0;border-top:1px solid var(--line)}
-  .photo-frame{width:68%;left:8%;top:8%}
-  .id-card{width:52%;right:5%;bottom:7%}
+  .hero-copy{grid-column:auto;padding:3.5rem 0 2.5rem}
+
+  .system-board{
+    min-height:280px;
+    border-left:0;
+    border-right:0;
+    border-top:1px solid var(--line);
+  }
+  .system-board svg{
+    inset:5% 18% 24%;
+    width:64%;
+    height:71%;
+  }
+  .system-note{
+    left:12%;
+    bottom:7%;
+    max-width:230px;
+    font-size:.95rem;
+  }
+
+  .portrait-zone{
+    min-height:470px;
+    border-left:0;
+    border-right:0;
+    border-top:1px solid var(--line);
+  }
+  .photo-frame{
+    width:min(72%,390px);
+    left:7%;
+    top:7%;
+  }
+  .id-card{
+    width:min(52%,285px);
+    right:5%;
+    bottom:5%;
+  }
+
+  .section-head{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:.25rem;
+  }
+  .section-head .hand-note{
+    margin-top:.25rem;
+    max-width:330px;
+    transform:rotate(-1deg);
+  }
+
   .feature-layout{grid-template-columns:1fr}
   .project-top{grid-template-columns:1fr}
   .project-diagram{min-height:125px}
@@ -443,9 +490,39 @@ p{margin-top:0}
 }
 @media(max-width:500px){
   h1{font-size:clamp(3.6rem,18vw,5rem)}
-  .system-board,.portrait-zone{min-height:360px}
-  .photo-frame{width:76%;left:5%}
-  .id-card{width:63%;right:2%;bottom:4%}
+  .hero-copy{padding:3rem 0 2.25rem}
+
+  .system-board{min-height:250px}
+  .system-board svg{
+    inset:3% 19% 25%;
+    width:62%;
+    height:72%;
+  }
+  .system-note{
+    left:14%;
+    bottom:6%;
+    max-width:210px;
+    font-size:.9rem;
+  }
+
+  .portrait-zone{min-height:430px}
+  .photo-frame{
+    width:78%;
+    left:5%;
+    top:6%;
+  }
+  .id-card{
+    width:66%;
+    right:2%;
+    bottom:3%;
+    padding:.9rem .95rem 1rem;
+  }
+  .id-card h3{font-size:.86rem}
+  .id-card p{font-size:.74rem}
+  .id-card .scribble{font-size:.8rem}
+
+  .section-head{margin-bottom:1.35rem}
+  .section-head .hand-note{max-width:270px}
   .contact-grid,.project-meta{grid-template-columns:1fr}
   .footer-note{flex-direction:column}
 }
