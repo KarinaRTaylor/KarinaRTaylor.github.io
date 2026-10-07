@@ -365,6 +365,12 @@ p{margin-top:0}
   background:rgba(255,255,255,.18);
   min-height:88px;
 }
+@media(max-width:500px){
+  .contact-grid a,.contact-placeholder{
+    min-height:72px;
+    padding:.65rem .75rem;
+  }
+}
 .contact-grid strong{display:block;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
 .hand-note{
   font-family:"Comic Sans MS","Bradley Hand",cursive;
@@ -492,7 +498,7 @@ p{margin-top:0}
   h1{font-size:clamp(3.6rem,18vw,5rem)}
   .hero-copy{padding:3rem 0 2.25rem}
 
-  .system-board{min-height:250px}
+  .system-board{min-height:225px}
   .system-board svg{
     inset:3% 19% 25%;
     width:62%;
@@ -513,8 +519,8 @@ p{margin-top:0}
   }
   .id-card{
     width:66%;
-    right:2%;
-    bottom:3%;
+    right:0;
+    bottom:1%;
     padding:.9rem .95rem 1rem;
   }
   .id-card h3{font-size:.86rem}
