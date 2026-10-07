@@ -198,7 +198,7 @@ p{margin-top:0}
   left:50%;
   bottom:8%;
   width:max-content;
-  max-width:calc(100% - 2rem);
+  max-width:none;
   white-space:nowrap;
   text-align:center;
   font-family:"Comic Sans MS","Bradley Hand",cursive;
@@ -457,8 +457,8 @@ p{margin-top:0}
   .system-note{
     left:50%;
     bottom:7%;
-    max-width:calc(100% - 1.5rem);
-    font-size:1.03rem;
+    max-width:none;
+    font-size:clamp(.9rem,2.8vw,1.03rem);
   }
 
   .portrait-zone{
@@ -509,8 +509,8 @@ p{margin-top:0}
   .system-note{
     left:50%;
     bottom:6%;
-    max-width:calc(100% - 1rem);
-    font-size:1rem;
+    max-width:none;
+    font-size:clamp(.82rem,3.6vw,1rem);
   }
 
   .portrait-zone{min-height:430px}
