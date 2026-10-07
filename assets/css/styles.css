@@ -716,3 +716,231 @@ p{margin-top:0}
   height: 100%;
   border: 0;
 }
+
+/* ------------------------------
+   Résumé / Contact page
+------------------------------ */
+.resume-hero{
+  padding:5.4rem 0 4.5rem;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 82% 18%,rgba(210,164,91,.08),transparent 24%),
+    linear-gradient(120deg,rgba(255,255,255,.018),transparent 40%);
+}
+.resume-hero-grid{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:4rem;
+  align-items:center;
+}
+.resume-hero h1{
+  font-size:clamp(4rem,7vw,6.6rem);
+  max-width:900px;
+}
+.resume-lead{
+  max-width:72ch;
+  color:#e7ded1;
+  font-size:1.12rem;
+  line-height:1.8;
+}
+.resume-contact-card{
+  background:var(--paper);
+  color:var(--ink);
+  border:1px solid var(--paper-3);
+  padding:1.5rem;
+  box-shadow:10px 12px 0 rgba(0,0,0,.18);
+  transform:rotate(.6deg);
+}
+.resume-contact-card h2{
+  font-size:2rem;
+  margin:.35rem 0 1rem;
+}
+.resume-contact-card dl{margin:0}
+.resume-contact-card dl div{
+  padding:.8rem 0;
+  border-top:1px solid #c9bba6;
+}
+.resume-contact-card dt{
+  font-family:var(--mono);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.67rem;
+  color:#805f2e;
+}
+.resume-contact-card dd{
+  margin:.25rem 0 0;
+  line-height:1.65;
+  overflow-wrap:anywhere;
+}
+.resume-contact-card a{text-underline-offset:.22em}
+
+.resume-paper{
+  background:
+    linear-gradient(rgba(239,231,216,.97),rgba(239,231,216,.97)),
+    repeating-linear-gradient(0deg,transparent 0 29px,rgba(67,51,32,.035) 29px 30px);
+  color:var(--ink);
+  border-bottom:1px solid #cdbfa9;
+}
+.resume-section{padding:4.6rem 0}
+.resume-opening{
+  max-width:72ch;
+  font-family:var(--serif);
+  font-size:1.42rem;
+  line-height:1.55;
+  color:#22303a;
+}
+.resume-facts{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.25rem;
+  margin-top:2rem;
+}
+.resume-facts article{
+  border-top:2px solid #8b6a35;
+  padding:1.1rem 0 0;
+}
+.resume-facts span{
+  display:block;
+  margin-bottom:.55rem;
+  font-family:var(--mono);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.68rem;
+  color:#805f2e;
+}
+.resume-facts strong{
+  display:block;
+  margin-bottom:.65rem;
+  font-family:var(--serif);
+  font-size:1.35rem;
+  line-height:1.25;
+}
+.resume-facts p{
+  margin:0;
+  max-width:46ch;
+  line-height:1.75;
+}
+
+.resume-dark{
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(17,39,54,.78),rgba(12,26,37,.98));
+}
+.resume-dark-intro{
+  max-width:72ch;
+  color:#d7dfe2;
+  font-size:1.05rem;
+  line-height:1.8;
+}
+.resume-timeline{
+  margin:2.2rem 0;
+  border-top:1px solid var(--line);
+}
+.resume-timeline article{
+  display:grid;
+  grid-template-columns:145px 1fr;
+  gap:1.4rem;
+  padding:1.55rem 0;
+  border-bottom:1px solid var(--line);
+}
+.resume-time{
+  font-family:var(--mono);
+  color:var(--gold);
+  font-size:.72rem;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  padding-top:.2rem;
+}
+.resume-timeline h3{
+  margin:0 0 .3rem;
+  font-size:1.45rem;
+  line-height:1.2;
+}
+.resume-org{
+  margin:0 0 .7rem;
+  color:var(--gold-soft);
+  font-family:var(--mono);
+  font-size:.76rem;
+}
+.resume-timeline article div:last-child>p:last-child{
+  margin:0;
+  max-width:72ch;
+  color:#d7dfe2;
+  line-height:1.8;
+}
+
+.resume-skill-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.25rem;
+  margin-top:2rem;
+}
+.resume-skill-grid article{
+  border:1px solid #c7b9a4;
+  background:rgba(255,255,255,.22);
+  padding:1.35rem;
+}
+.resume-skill-grid h3{
+  margin:0 0 .8rem;
+  font-size:1.4rem;
+}
+.resume-skill-grid p{
+  margin:0;
+  max-width:62ch;
+  line-height:1.8;
+}
+
+.resume-connect{
+  padding:4.2rem 0;
+  border-bottom:1px solid var(--line);
+}
+.resume-connect-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:3rem;
+  align-items:center;
+}
+.resume-connect-grid>div>p{
+  max-width:64ch;
+  color:#d7dfe2;
+  line-height:1.8;
+}
+.resume-field-note{
+  max-width:460px;
+  padding:1rem 0 1rem 1.2rem;
+  border-left:2px solid rgba(210,164,91,.72);
+  transform:rotate(-1deg);
+}
+.resume-field-note .small{
+  font-family:var(--mono);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.69rem;
+  color:var(--gold);
+}
+.resume-field-note p{
+  margin:.55rem 0 0;
+  font-family:"Comic Sans MS","Bradley Hand",cursive;
+  color:#9bb6cf;
+  font-size:1.08rem;
+  line-height:1.7;
+}
+
+@media(max-width:900px){
+  .resume-hero-grid,.resume-connect-grid{grid-template-columns:1fr}
+  .resume-contact-card{max-width:620px;transform:none}
+  .resume-facts{grid-template-columns:1fr}
+  .resume-skill-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .resume-hero{padding:3.8rem 0 3rem}
+  .resume-section{padding:3.5rem 0}
+  .resume-timeline article{
+    grid-template-columns:1fr;
+    gap:.45rem;
+    padding:1.7rem 0;
+  }
+  .resume-time{padding-top:0}
+  .resume-contact-card{padding:1.25rem}
+  .resume-opening{font-size:1.27rem}
+  .resume-facts p,.resume-skill-grid p,.resume-timeline article div:last-child>p:last-child{line-height:1.85}
+}
