@@ -1,6 +1,6 @@
 # Karina Taylor — Professional Portfolio
 
-Version 1 static portfolio for GitHub Pages.
+Portfolio for GitHub Pages.
 
 ## Pages
 - Home
