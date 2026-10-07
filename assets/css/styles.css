@@ -195,15 +195,17 @@ p{margin-top:0}
 }
 .system-note{
   position:absolute;
-  left:18%;
+  left:50%;
   bottom:8%;
+  width:max-content;
+  max-width:none;
+  white-space:nowrap;
+  text-align:center;
   font-family:"Comic Sans MS","Bradley Hand",cursive;
   color:#9eb7cf;
-  font-size:1rem;
-  transform:rotate(-5deg);
-  max-width:180px;
+  font-size:1.08rem;
+  transform:translateX(-50%) rotate(-4deg);
 }
-.system-note::after{content:"↗";font-size:2rem;position:absolute;right:-2.2rem;top:.4rem}
 
 .portrait-zone{
   position:relative;
@@ -453,10 +455,10 @@ p{margin-top:0}
     height:71%;
   }
   .system-note{
-    left:12%;
+    left:50%;
     bottom:7%;
-    max-width:230px;
-    font-size:.95rem;
+    max-width:none;
+    font-size:clamp(.9rem,2.8vw,1.03rem);
   }
 
   .portrait-zone{
@@ -505,10 +507,10 @@ p{margin-top:0}
     height:72%;
   }
   .system-note{
-    left:14%;
+    left:50%;
     bottom:6%;
-    max-width:210px;
-    font-size:.9rem;
+    max-width:none;
+    font-size:clamp(.82rem,3.6vw,1rem);
   }
 
   .portrait-zone{min-height:430px}
