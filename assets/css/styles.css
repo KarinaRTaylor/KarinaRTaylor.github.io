@@ -607,48 +607,67 @@ p{margin-top:0}
 }
 .about-experience h2{max-width:760px}
 .experience-intro{
-  max-width:900px;
+  max-width:72ch;
+  margin-bottom:2.4rem;
   color:#d7dfe2;
-  font-size:1.02rem;
+  font-size:1.05rem;
+  line-height:1.8;
 }
 .experience-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:1rem;
-  margin-top:2rem;
+  gap:1.5rem;
+  margin-top:0;
 }
 .experience-card{
-  border:1px solid var(--line);
-  background:rgba(7,17,24,.28);
-  padding:1.25rem;
+  border:1px solid rgba(210,164,91,.42);
+  background:rgba(7,17,24,.32);
+  padding:1.55rem 1.55rem 1.7rem;
 }
 .experience-card:last-child{grid-column:1/-1}
 .experience-card h3{
-  margin:.5rem 0 .65rem;
-  font-size:1.5rem;
+  margin:.7rem 0 1rem;
+  font-size:1.55rem;
+  line-height:1.18;
 }
 .experience-card p{
+  max-width:68ch;
   margin:0;
   color:#d7dfe2;
-  font-size:.92rem;
+  font-size:1rem;
+  line-height:1.8;
 }
 .experience-meta{
   font-family:var(--mono);
   text-transform:uppercase;
-  letter-spacing:.08em;
-  font-size:.66rem;
+  letter-spacing:.09em;
+  line-height:1.6;
+  font-size:.68rem;
   color:var(--gold);
 }
 .experience-note{
-  margin-top:1.7rem;
+  margin-top:2.4rem;
   max-width:760px;
   font-family:"Comic Sans MS","Bradley Hand",cursive;
   color:#9bb6cf;
   font-size:1.04rem;
+  line-height:1.7;
   transform:rotate(-1deg);
 }
 
-@media(max-width:900px){.about-hero-grid,.about-grid,.about-next-grid{grid-template-columns:1fr}.about-photo-stack{max-width:460px}.about-bridge-grid,.experience-grid{grid-template-columns:1fr}.experience-card:last-child{grid-column:auto}}
+@media(max-width:900px){
+  .about-hero-grid,.about-grid,.about-next-grid{grid-template-columns:1fr}
+  .about-photo-stack{max-width:460px}
+  .about-bridge-grid,.experience-grid{grid-template-columns:1fr}
+  .experience-grid{gap:1.8rem}
+  .experience-card{
+    grid-column:auto;
+    padding:1.4rem 1.3rem 1.55rem;
+  }
+  .experience-card:last-child{grid-column:auto}
+  .experience-card h3{margin-bottom:1rem}
+  .experience-card p{line-height:1.85}
+}
 
 /* ------------------------------
    CIN case study
