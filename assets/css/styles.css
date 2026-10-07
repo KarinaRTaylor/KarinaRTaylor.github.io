@@ -306,6 +306,9 @@ p{margin-top:0}
   grid-template-columns:1fr 1fr .88fr;
   gap:1rem;
 }
+.projects-grid{
+  grid-template-columns:1fr 1fr;
+}
 .project-card{
   border:1px solid #c9bba6;
   background:rgba(246,240,229,.74);
